@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////
 // Include Secrets:
 // - HAPIKEY - HubSpot API Key
-// - CUPAPIKEY - ClickUp API Key
+// - CUAPIKEY - ClickUp API Key
 // - DESTINATIONLISTID - A List ID in ClickUp that will be the destination for all tickets from HubSpot
 // - PORTALID - HubSpot Portal ID
 // - HUBSPOTURLID - The ID of a custom field set up in click to receive a link to the ticket in HubSpot
@@ -23,7 +23,7 @@ exports.main = async (event, callback) => {
       	url: 'https://api.clickup.com/api/v2/list/' + process.env.DESTINATIONLISTID + '/task',
       	headers: { 
         	'Content-Type': 'application/json',
-        	'Authorization': process.env.CUPAPIKEY
+        	'Authorization': process.env.CUAPIKEY
       	},
       	data: {
           "name": event.fields.name,
