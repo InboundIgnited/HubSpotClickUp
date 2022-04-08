@@ -39,7 +39,9 @@
   <p>A collection of custom coded workflow actions to sync tickets between HubSpot and ClickUp. Data currently syncing to ClickUp includes:
     <ul>
       <li>Ticket ID</li>
-      <li>Link to Ticket in HubSpot</li>
+      <li>Ticket Name</li>
+      <li>Ticket Description</li>
+      <li>Link to Ticket in HubSpot (Custom Field)</li>
     </ul>
   </p>
   <p>
